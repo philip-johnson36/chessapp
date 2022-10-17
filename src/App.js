@@ -12,7 +12,7 @@ import {
   View,
   withAuthenticator,
 }from "@aws-amplify/ui-react";
-import CreatorBoard from "./creatorBoard";
+import CreatorBoard from "./CreatorBoard";
 import Chessboard from 'chessboardjsx';
 import TesterBoard from "./TesterBoard";
 
@@ -38,9 +38,12 @@ function App({ signOut }) {
       </div>
       
 
-      <button onClick={signOut}>Sign Out</button>
-      <button onClick={() => switchActivity("test")}>Test</button>
-      <button onClick={() => switchActivity("create")}>Create</button>
+      <Button onClick={signOut}>Sign Out</Button>
+      <Button onClick={() => switchActivity("train")}>Train</Button>
+      <Button onClick={() => switchActivity("create")}>Create</Button>
+      <TextField> Instructions: <br/> To use creative mode, make the move you want to remember, then make sure the 
+      correct picture is uploaded. Then, click "save position" to save the last move you made along with your mnemonic.
+      <br/> To use testing mode, simply make a correct move when given a position. <br/>  </TextField>
     </div>
   );
 

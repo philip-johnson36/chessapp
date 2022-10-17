@@ -95,7 +95,7 @@ function TesterBoard() {
 
   return (
     <div className="flex-center">
-      <h1>Random Chess</h1>
+      <h1>Training</h1>
       <Chessboard
         width={400}
         position={position.fen}
@@ -117,8 +117,8 @@ function TesterBoard() {
       />
     )}
     <br></br>
-      <button onClick={deletePosition}>Delete Position</button>
-      <button onClick={servePosition}>Skip Position</button>
+      <Button onClick={deletePosition}>Delete Position</Button>
+      <Button onClick={servePosition}>Skip Position</Button>
     </div>
     
   );

@@ -41,9 +41,10 @@ function App({ signOut }) {
       <Button onClick={signOut}>Sign Out</Button>
       <Button onClick={() => switchActivity("train")}>Train</Button>
       <Button onClick={() => switchActivity("create")}>Create</Button>
-      <TextField> Instructions: <br/> To use creative mode, make the move you want to remember, then make sure the 
+      <Text> Instructions: <br/> To use creative mode, make the move you want to remember, then make sure the 
       correct picture is uploaded. Then, click "save position" to save the last move you made along with your mnemonic.
-      <br/> To use testing mode, simply make a correct move when given a position. <br/>  </TextField>
+      <br/> To use testing mode, simply make a correct move when given a position. <br/>  </Text>
+
     </div>
   );
 
